@@ -1,0 +1,13 @@
+/*------------------- Header ------------------- */
+.header .container {
+  display: flex;
+}
+
+/* ---------------- Line-header ----------------  */
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header-navigation {
+  @include center;
+}
