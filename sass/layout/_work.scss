@@ -1,6 +1,9 @@
 /*------------------- Work ------------------- */
 .section__other-background {
   padding-top: 0;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .work-list {

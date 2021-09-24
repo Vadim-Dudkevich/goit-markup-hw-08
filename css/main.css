@@ -38,10 +38,28 @@ img {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .section {
@@ -206,19 +224,22 @@ img {
 
 /*------------------- Hero ------------------- */
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  text-align: center;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(112, 116, 163, 0.4)), url(../images/hero/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #2f303a;
+}
+
+@media screen and (min-width: 480px) {
+  .hero {
+    text-align: center;
+    background-color: #2f303a;
+  }
 }
 
 .hero__title {
-  margin-bottom: 30px;
-  font-size: 44px;
-  line-height: 1.36;
+  padding-top: 118px;
+  font-size: 26px;
+  line-height: 1.61;
   font-weight: 900;
   letter-spacing: 0.06em;
   text-align: center;
@@ -229,6 +250,8 @@ img {
 /*---------------- Button ----------------*/
 .hero__button {
   display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 118px;
   padding: 10px 32px;
   min-width: 200px;
   font-size: 16px;
@@ -245,16 +268,28 @@ img {
 }
 
 /*------------------- Features ------------------- */
-.features {
-  display: flex;
+@media screen and (min-width: 320px) {
+  .features {
+    display: block;
+  }
 }
 
-.features__item {
-  width: 270px;
+@media screen and (min-width: 480px) {
+  .features__item {
+    width: 450px;
+  }
+  .features__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
-.features__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .features__item {
+    width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
 .features__box {
@@ -268,15 +303,29 @@ img {
   border-radius: 4px;
 }
 
+@media screen and (min-width: 480px) {
+  .features__box {
+    width: 450px;
+  }
+}
+
 .features__title {
-  margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.14;
   font-weight: 0.03em;
   letter-spacing: 0.02em;
+  margin-bottom: 10px;
   text-transform: uppercase;
   color: var(--second-text-color);
-  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 480px) {
+  .features__title {
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .features__text {
@@ -290,6 +339,12 @@ img {
 /*------------------- Work ------------------- */
 .section__other-background {
   padding-top: 0;
+}
+
+@media screen and (max-width: 1199px) {
+  .section__other-background {
+    display: none;
+  }
 }
 
 .work-list {

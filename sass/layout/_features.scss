@@ -1,18 +1,40 @@
 /*------------------- Features ------------------- */
 
 .features {
-  display: flex;
+  @media screen and (min-width: 320px) {
+    display: block;
+  }
+
+  // @media screen and (min-width: 1200px) {
+  //   display: flex;
+  // }
 }
 
 .features__item {
-  width: 270px;
+  @media screen and (min-width: 480px) {
+    width: 450px;
 
-  &:not(:last-child) {
-    margin-right: 30px;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  @media screen and (min-width: 1200px) {
   }
 }
 
 .features__box {
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
   @include center;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -24,13 +46,15 @@
 }
 
 .features__title {
-  margin-bottom: 10px;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    @include center;
+  }
 
   @include font(14px, 1.14, 0.03em);
-  text-transform: uppercase;
-
-  color: var(--second-text-color);
   margin-bottom: 10px;
+  text-transform: uppercase;
+  color: var(--second-text-color);
 }
 
 .features__text {
