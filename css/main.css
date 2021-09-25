@@ -46,7 +46,7 @@ img {
 
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 450px;
+    max-width: 480px;
   }
 }
 
@@ -224,27 +224,30 @@ img {
 
 /*------------------- Hero ------------------- */
 .hero {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(112, 116, 163, 0.4)), url(../images/hero/hero.jpg);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-@media screen and (min-width: 480px) {
-  .hero {
-    text-align: center;
-    background-color: #2f303a;
-  }
+  background-color: #2f303a;
 }
 
 .hero__title {
-  padding-top: 118px;
-  font-size: 26px;
-  line-height: 1.61;
-  font-weight: 900;
-  letter-spacing: 0.06em;
+  margin-bottom: 30px;
   text-align: center;
   text-transform: uppercase;
   color: var(--white-text-color);
+}
+
+@media screen and (min-width: 480px) {
+  .hero__title {
+    max-width: 480px;
+    font-size: 26px;
+    line-height: 1.62;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+  }
 }
 
 /*---------------- Button ----------------*/
@@ -267,29 +270,16 @@ img {
   color: var(--white-text-color);
 }
 
-/*------------------- Features ------------------- */
-@media screen and (min-width: 320px) {
-  .features {
-    display: block;
-  }
+.features {
+  display: flex;
 }
 
-@media screen and (min-width: 480px) {
-  .features__item {
-    width: 450px;
-  }
-  .features__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
+.features__item {
+  width: 270px;
 }
 
-@media screen and (min-width: 768px) {
-  .features__item {
-    width: 768px;
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
-  }
+.features__item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .features__box {
@@ -303,29 +293,15 @@ img {
   border-radius: 4px;
 }
 
-@media screen and (min-width: 480px) {
-  .features__box {
-    width: 450px;
-  }
-}
-
 .features__title {
+  margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.14;
   font-weight: 0.03em;
   letter-spacing: 0.02em;
-  margin-bottom: 10px;
   text-transform: uppercase;
   color: var(--second-text-color);
-}
-
-@media screen and (min-width: 480px) {
-  .features__title {
-    width: 450px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  margin-bottom: 10px;
 }
 
 .features__text {
