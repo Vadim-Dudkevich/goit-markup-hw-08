@@ -1,14 +1,22 @@
 /*---------------- Logo ----------------*/
 .header-logo {
   display: block;
-  margin-right: 93px;
-  padding-top: 25px;
-  padding-bottom: 24px;
 
   font-family: 'Raleway', sans-serif;
-  @include font(26px, 1.2, 700, 0.03em);
+  @include font(24px, 1.17, 700, 0.03em);
 
   color: var(--second-text-color);
+
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font(26px, 1.2, 700, 0.03em);
+    margin-right: 93px;
+    padding-top: 25px;
+    padding-bottom: 24px;
+  }
 }
 
 .header-logo-web {

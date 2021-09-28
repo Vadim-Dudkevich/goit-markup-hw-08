@@ -1,4 +1,17 @@
 /*---------------- Site nav ----------------*/
+.mobile-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  // width: 100vw;
+  // height: 100vh;
+  // background-color: #fff;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
 .nav-list {
   @include center;
 }
@@ -46,4 +59,39 @@
 
 .nav-list__link---current {
   color: var(--akcent-text-color);
+}
+
+/*---------------- Site nav contacts ----------------*/
+.contacts-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts-list__item {
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+.contacts-list__link {
+  @include center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  @include font(14px, 1.14, 500, 0.02em);
+
+  color: var(--first-text-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--akcent-text-color);
+  }
+}
+
+.contacts-list__icon {
+  display: inline-block;
+  fill: currentColor;
+  margin-right: 10px;
 }

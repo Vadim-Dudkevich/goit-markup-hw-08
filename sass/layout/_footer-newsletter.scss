@@ -1,7 +1,7 @@
 /*------------------- Newsletter ------------------- */
 .email {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    display: flex;
+    display: block;
     flex-wrap: wrap;
   }
 }
@@ -29,7 +29,6 @@
 
 .email-input {
   min-width: 358px;
-  // margin-top: 20px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
