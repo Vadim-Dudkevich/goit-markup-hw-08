@@ -1,25 +1,30 @@
 /*---------------- Portfolio  ----------------*/
-.conteiner-portfolio {
-  width: 1170px;
-}
-
-.portfolio-list {
-  display: flex;
-
-  flex-wrap: wrap;
-
-  margin-left: -30px;
-  margin-top: -30px;
+.portfolio {
+  // margin: 15px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
 .portfolio-item {
-  flex-basis: calc(100% / 3 - 30px);
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
 
-  margin-left: 30px;
-  margin-top: 30px;
+  @media screen and (min-width: 768px) {
+    margin: 15px;
+    flex-basis: calc((100% - 60px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 90px) / 3);
+  }
+  // flex-basis: calc(100% / 3 - 30px);
 }
 
-.portfolio-item-link {
+.portfolio-link {
   display: block;
 
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -32,7 +37,7 @@
   }
 }
 
-.text-conteiner {
+.text-box {
   padding: 20px 24px;
 
   background: #ffffff;
@@ -62,7 +67,7 @@
   overflow: hidden;
 }
 
-.portfolio-overlay-text {
+.portfolio-overlay__text {
   position: absolute;
   top: 0;
   left: 0;
@@ -78,8 +83,8 @@
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  .portfolio-item-link:hover &,
-  .portfolio-item-link:focus & {
+  .portfolio-link:hover &,
+  .portfolio-link:focus & {
     transform: translateY(0);
   }
 }

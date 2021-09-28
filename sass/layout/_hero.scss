@@ -68,8 +68,8 @@
   text-align: center;
   text-transform: uppercase;
   color: var(--white-text-color);
-}
 
-@media screen and (min-width: 1200px) {
-  @include font(44px, 1.36, 900, 0.06em);
+  @media screen and (min-width: 1200px) {
+    @include font(44px, 1.36, 900, 0.06em);
+  }
 }
