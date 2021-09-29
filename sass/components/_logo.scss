@@ -24,17 +24,6 @@
 }
 
 /*---------------- Footer-Logo ----------------*/
-.address-logo {
-  flex-grow: 1;
-
-  @media screen and (max-width: 1199px) {
-    margin-bottom: 60px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    margin-right: 70px;
-  }
-}
 
 .footer-logo {
   margin-bottom: 20px;
@@ -43,10 +32,6 @@
   @include font(24px, 1.17, 700, 0.03em);
 
   color: var(--white-text-color);
-
-  @media screen and (max-width: 767px) {
-    text-align: center;
-  }
 }
 
 .footer-logo-web {

@@ -1,19 +1,32 @@
 /*---------------- Site nav ----------------*/
-.mobile-menu {
-  position: fixed;
-  left: 0;
-  top: 0;
-  // width: 100vw;
-  // height: 100vh;
-  // background-color: #fff;
+// .mobile-menu {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100vw;
+//   height: 100vh;
+//   padding: 32px;
+//   background-color: #3f51b5;
+//   z-index: 999;
+
+//   transform: translateX(100%);
+//   transition: transform 250ms ease-in-out;
+
+//   &.is-open {
+//     transform: translateX(0);
+//   }
+
+//   @media screen and (max-width: 767px) {
+//     display: none;
+//   }
+// }
+
+.nav-list {
+  @include center;
 
   @media screen and (max-width: 767px) {
     display: none;
   }
-}
-
-.nav-list {
-  @include center;
 }
 
 .nav-list__item {
@@ -63,22 +76,47 @@
 
 /*---------------- Site nav contacts ----------------*/
 .contacts-list {
-  display: flex;
-  margin-left: auto;
+  // display: flex;
+  // margin-left: auto;
+
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .contacts-list__item {
-  &:not(:last-child) {
-    margin-right: 40px;
+  // &:not(:last-child) {
+  //   margin-right: 40px;
+  // }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
 
 .contacts-list__link {
-  @include center;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  display: flex;
+  align-items: center;
+  // padding-top: 32px;
+  // padding-bottom: 32px;
 
-  @include font(14px, 1.14, 500, 0.02em);
+  @include font(12px, 1.17, 500, 0.02em);
 
   color: var(--first-text-color);
 
@@ -87,6 +125,10 @@
   &:hover,
   &:focus {
     color: var(--akcent-text-color);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font(14px, 1.14, 500, 0.02em);
   }
 }
 

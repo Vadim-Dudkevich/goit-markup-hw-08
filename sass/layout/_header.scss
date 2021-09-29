@@ -1,5 +1,7 @@
 /*------------------- Header ------------------- */
-.header-containet {
+.header__container {
+  // width: 100%;
+  // justify-content: space-between;
   display: flex;
   align-items: center;
 
@@ -10,11 +12,32 @@
   }
 }
 
+.header-menu {
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+  }
+}
+
 /* ---------------- Line-header ----------------  */
 .header {
   border-bottom: 1px solid #ececec;
 }
 
-.header-navigation {
-  @include center;
-}
+// @media screen and (min-width: 768px) {
+//   @include center;
+// }
+
+// .header-navigation {
+//   @include center;
+//   width: 100%;
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+
+//   @media screen and (min-width: 768px) {
+//     @include center;
+//   }
+// }
