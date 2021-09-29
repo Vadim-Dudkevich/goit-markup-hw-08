@@ -53,9 +53,6 @@
                     </a>
                 </li>
             </ul>
-                <div class="mobile-menu js-menu-container" id="mobile-menu">
-                        
-                </div>
         </div>
     </header>
 
@@ -475,7 +472,48 @@
         </div>
     </footer>
 
-    <!-- Modal -->
+    <!-- ! Mobile-menu -->
+    <class class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu close-menu">
+            <svg width="18" height="18">
+                <use class="close-menu__icon" href="./images/sprite.svg#icon-close-black"></use>
+            </svg>
+        </button>
+            <ul class="mob-list">
+                <li class="mob-list__item"><a class="mob-list__link link nav-list__link---current"
+                        href="./index.html">Студия</a></li>
+                <li class="mob-list__item"><a class="mob-list__link link" href="./portfolio.html">Портфолио</a></li>
+                <li class="mob-list__item"><a class="mob-list__link link" href="./contacts.html">Контакты</a></li>
+            </ul>
+    
+            <ul class="mob-contacts">
+                <li class="mob-contacts__item">
+                    <a class="mob-contacts__link link" href="tel:+38096111111">
+                        +38 096 111 11 11
+                    </a>
+                </li>
+                <li class="mob-contacts__item">
+                    <a class="mob-contacts__link link" href="mailto:info@devstudio.com">
+                        info@devstudio.com
+                    </a>
+                </li>
+            </ul>
+            <ul class="mob-socials">
+                <li class="mob-socials__item"><a class="mob-socials__link mob-socials__link--after link"
+                        href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                </li>
+                <li class="mob-socials__item"><a class="mob-socials__link mob-socials__link--after link" href="https://twitter.com/"
+                        target="_blank" rel="noopener noreferrer">Twitter</a>
+                </li>
+                <li class="mob-socials__item"><a class="mob-socials__link mob-socials__link--after link"
+                        href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+                </li>
+                <li class="mob-socials__item"><a class="mob-socials__link mob-socials__link--after link"
+                        href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            </ul>
+        </div>
+
+    <!--! Modal -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="btn" data-modal-close>
@@ -483,7 +521,7 @@
                     <use href="./images/sprite.svg#icon-close-black"></use>
                 </svg>
             </button>
-
+    
             <form class="modal-form" action="#">
                 <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
                 <div class="modal-form-field">
@@ -515,7 +553,8 @@
                 </div>
                 <div class="modal-form-field">
                     <label for="modal-comment" class="modal-form-label">Комментарий</label>
-                    <textarea name="comment" id="modal-comment" placeholder="Введите текст" class="modal-comment"></textarea>
+                    <textarea name="comment" id="modal-comment" placeholder="Введите текст"
+                        class="modal-comment"></textarea>
                 </div>
                 <div class="modal-form-field">
                     <input type="checkbox" id="check" class="checkbox visually-hidden" name="policy">
