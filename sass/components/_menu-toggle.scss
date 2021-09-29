@@ -74,7 +74,7 @@
 
 .mob-list__link {
   color: var(--second-text-color);
-  @include font(30px, 1.17, 500, 0.02em);
+  @include font(28px, 1.17, 500, 0.02em);
 
   @media screen and (min-width: 480px) {
     @include font(40px, 1.17, 500, 0.02em);
@@ -98,7 +98,7 @@
 
 .mob-contacts__link {
   color: var(--first-text-color);
-  @include font(28px, 1.43, 500, 0.02em);
+  @include font(24px, 1.43, 500, 0.02em);
 
   @media screen and (min-width: 480px) {
     @include font(34px, 1.17, 500, 0.02em);
