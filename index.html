@@ -123,21 +123,36 @@
                 <h2 class="section__title">Чем мы занимаемся</h2>
                 <ul class="work-list">
                     <li class="work-list__item">
-                        <img class="work__image" alt="Верстка сайта HTML" src="./images/work/work-1.jpg" srcset="./images/work/work-1@2x.jpg" />
+                        <picture>
+                            <source 
+                            srcset="./images/work/work-1.jpg 1x, ./images/work/work-1@2x.jpg 2x" 
+                            media="(min-width:1200px)" />
+                            <img class="work__image" alt="Верстка сайта HTML" src="./images/work/work-1.jpg" />
+                        </picture>
                         <div class="work-list__label-overlay">
                             <p class="work-list__label-text">Дектопные приложения</p>
                         </div>
                     </li>
 
                     <li class="work-list__item">
-                        <img class="work__image" alt="Выбор стиля" src="./images/work/work-2.jpg" srcset="./images/work/work-2@2x.jpg" />
+                        <picture>
+                            <source 
+                            srcset="./images/work/work-2.jpg 1x, ./images/work/work-2@2x.jpg 2x" 
+                            media="(min-width:1200px)" />
+                            <img class="work__image" alt="Выбор стиля" src="./images/work/work-2.jpg" />
+                        </picture>
                         <div class="work-list__label-overlay">
                             <p class="work-list__label-text">Мобильные приложения</p>
                         </div>
                     </li>
 
                     <li class="work-list__item">
-                        <img class="work__image" alt="Дизайн" src="./images/work/work-3.jpg" srcset="./images/work/work-3@2x.jpg" />
+                        <picture>
+                            <source 
+                            srcset="./images/work/work-3.jpg 1x, ./images/work/work-3@2x.jpg 2x" 
+                            media="(min-width:1200px)" />
+                            <img class="work__image" alt="Дизайн" src="./images/work/work-3.jpg" />
+                        </picture>
                         <div class="work-list__label-overlay">
                             <p class="work-list__label-text">Дизайнерские решения</p>
                         </div>
